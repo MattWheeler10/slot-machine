@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Teko&display=swap');
+body{
+  background-image: url(http://www.casino-capers.org/wp/wp-content/uploads/2015/01/Casino-Capers-Web-Background-2015.jpg);
+  background-size: cover;
+}
+.SlotImages {
+    display: grid  inline-grid;
+    width: 50%;
+}
+
+#Start{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+.SlotImages{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+h3{
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
+  color: whitesmoke;
+}
+p{
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  font-size: 18px;
+  color: whitesmoke;
+}
+#status{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+#bet1{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+button{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+#better{
+  margin-bottom:20px;
+}
+.Start:hover{
+  animation: pulse 0.5s infinite ease-in-out;
+}
+#bet1{
+  text-align: center;
+}
+@keyframes pulse
+{
+    0%{
+        transition: scale(1);
+    }
+    100%{
+        transform:scale(1.1);
+    }
+
+} 
