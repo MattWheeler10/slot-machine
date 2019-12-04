@@ -57,7 +57,7 @@ button{
   margin-bottom:20px;
 }
 .Start:hover{
-  animation: pulse 0.5s infinite ease-in-out;
+  animation: pulse 2s infinite ease-in-out;
 }
 #bet1{
   text-align: center;
@@ -67,8 +67,11 @@ button{
     0%{
         transition: scale(1);
     }
-    100%{
+    50%{
         transform:scale(1.1);
+    }
+    100%{
+        transition: scale(1);
     }
 
 } 

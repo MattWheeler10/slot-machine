@@ -20,28 +20,32 @@ function winner(){
     document.getElementById("status").src = "images/BigWin.png"
      
     if (document.getElementById("r1").getAttribute("src")=="images/Grapes.png"){
-        balance += bet*2;
+        balance = balance + bet*2;
         wins.innerHTML = ("YOU WIN: Grapes *2")
         console.log("YOU WIN: Grapes *2")
     }else if(document.getElementById("r1").getAttribute("src")=="images/Lemon.png"){
-        balance += bet*3;
+        balance = balance + bet*3;
         wins.innerHTML = ("YOU WIN: Lemon *3")
         console.log("YOU WIN: Lemon *3")
     }else if(document.getElementById("r1").getAttribute("src")=="images/Watermelon.png"){
-        balance += bet*4;
+        balance = balance + bet*4;
         wins.innerHTML = ("YOU WIN: Watermelon *4")
         console.log("YOU WIN: Watermelon *4")
     }else if(document.getElementById("r1").getAttribute("src")=="images/Strawberry.png"){
-        balance += bet*5;
+        balance = balance + bet*5;
         wins.innerHTML = ("YOU WIN: Strawberry *5")
         console.log("YOU WIN: Strawberry *5")
     }else if(document.getElementById("r1").getAttribute("src")=="images/Orange.png"){
-        balance += bet*6;
+        balance = balance + bet*6;
         wins.innerHTML = ("YOU WIN: Oranges *6")
         console.log("YOU WIN: Oranges *6")
     }
 }
 function spin(){
+    if(balance<=0){
+        alert=("You have run out of money press replay to play again!")
+        spin();
+    }
     bet = document.getElementById("bet1").value
     balance = balance - bet
     //alert(bet)
